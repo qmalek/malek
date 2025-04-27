@@ -12,7 +12,7 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-M2199M6K5P');  // Replace with your actual tracking ID
+        gtag('config', 'G-M2199M6K5P'); // Replace with your actual tracking ID
     </script>
     <!-- End of Google Analytics Tracking Code -->
 
@@ -21,17 +21,22 @@
             font-family: Arial, sans-serif;
             text-align: center;
             padding-top: 50px;
-            background: #f4f4f4;
+            background-color: #f4f4f4;
+            color: #333;
         }
+
         #login {
             margin-bottom: 20px;
         }
+
         input[type="password"] {
             padding: 10px;
             font-size: 1em;
             width: 200px;
             border-radius: 5px;
+            border: 1px solid #ccc;
         }
+
         button {
             padding: 10px 20px;
             background-color: #5cb85c;
@@ -39,10 +44,13 @@
             border: none;
             border-radius: 5px;
             font-size: 1em;
+            cursor: pointer;
         }
+
         button:hover {
             background-color: #4cae4c;
         }
+
         #message {
             display: none;
             font-size: 1.5em;
@@ -50,22 +58,37 @@
             background-color: rgba(255, 255, 255, 0.7);
             padding: 20px;
             border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        .msg-content {
+            font-size: 1.2em;
+            margin-top: 20px;
+            color: #FF6347;
         }
     </style>
 </head>
 <body>
+
+    <!-- Login Section -->
     <div id="login">
         <h1>Enter Password to View Content</h1>
         <input type="password" id="passwordInput" placeholder="Enter password..." />
         <button onclick="checkPassword()">Submit</button>
     </div>
+
+    <!-- Secret Message Section -->
     <div id="message">
-        <p>Your secret message goes here. 🥳</p>
+        <p>If there's something new, let me know <span>🙄</span></p>
+        <div class="msg-content">
+            <p>it's up to you lol ,(3dit nos nhar n3ml feha 9adri mjhoudi 🙃)</p>
+        </div>
     </div>
 
+    <!-- JavaScript for Password Check -->
     <script>
         function checkPassword() {
-            const correctPassword = "your-secret-password"; // Change to your password
+            const correctPassword = "369"; // Change to your password
             const enteredPassword = document.getElementById("passwordInput").value;
 
             if (enteredPassword === correctPassword) {
@@ -76,5 +99,6 @@
             }
         }
     </script>
+
 </body>
 </html>
